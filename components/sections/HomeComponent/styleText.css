@@ -1,0 +1,138 @@
+.textComponent{
+    width: 100%;
+  /*  border: 3px solid yellow;*/
+      
+}
+
+.textHi{
+    display: flex;
+    /*justify-content: center;*/
+}
+
+#norberto{
+    color:blueviolet;
+}
+
+.textHi h2{
+    font-size: 36px;
+    color: white;
+}
+
+
+
+.barLateral{
+   width: 5px;
+   height: 300px;
+   background-color: blueviolet;
+   /*margin-left:300px ;*/
+    
+}
+
+
+
+.textext{
+    display:flex ;
+    justify-content: center;
+    /*border: 3px solid blue;*/
+    width:40vw;
+    margin: 0 auto;
+    margin-top: 180px;
+ 
+
+}
+
+#textHero{
+   /* padding: 15px;*/
+    color: white;
+    text-align: left;
+   /* margin-left: 100px;*/
+}
+
+
+
+
+@media screen and (max-width: 1195px) {
+
+    .textHi h2{
+        font-size: 30px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .textHi h2{
+        font-size: 24px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .textext{
+        margin-top: 600px;
+        width: 70vw;
+    }
+
+
+
+}
+
+@media screen and (max-width: 840px) {
+
+    .textHi h2{
+        font-size: 24px;
+    }
+
+    #textHero{
+        margin: 0 auto;
+        
+        text-align: justify;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .textHi{
+        display: grid;
+      margin: 0 auto;
+    
+      width: fit-content;
+  
+    }
+   
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .textComponent{
+
+   width: 100%
+    
+}
+
+.textComponentHi{
+
+    width: 100% ;
+}
+.textext{
+    display:flex ;
+    justify-content: center;
+    
+    width:250px;
+    margin: 0 auto;
+    margin-top: 500px;
+
+
+}
+
+
+    
+
+}

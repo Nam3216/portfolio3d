@@ -1,0 +1,63 @@
+.buttonLink{
+    color: black;
+    /*font-size: medium;*/
+    font-weight: bold;
+}
+
+
+.appbar{
+    height: 0;/*para q no tenga relieve al principio*/
+   /*border-bottom: 1px solid #006699 ;*/
+
+}
+
+.appbar a{
+    font-size:medium ;
+}
+
+.appbarfalse{
+    height: 55px;
+    border-bottom: 2px solid #006699 ;
+    
+ 
+}
+
+.appbarfalse a{
+    font-size: medium;
+  ;
+}
+
+.iconsappbar{
+    margin-right: 20px;
+}
+
+.iconsNavbar{
+    display: flex;
+    margin-right: 20px;
+  
+}
+
+.iconsNavbar img{
+    width: 30px;
+    margin-right: 20px;
+    
+}
+
+.iconsNavbar:first-child{
+   cursor: pointer;
+   
+}
+
+.iconsNavbar:nth-child(2){
+    cursor: pointer;
+ }
+
+ #flags{
+    margin-bottom: 10px;
+    
+ }
+
+ #itemResponsiveOk{
+    background-color: black;
+    
+ }

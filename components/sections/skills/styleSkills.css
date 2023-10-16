@@ -1,0 +1,151 @@
+
+.skillsComContainer{
+  
+    width: 70vw;/*80*/
+    margin: 0 auto;
+  /*  border: 5px solid red;*/
+  
+  }
+  
+  
+  /*---scenes----*/
+  
+  /* scenes (the good stuff) */
+  
+  .scenes {
+      position: relative;
+      aspect-ratio: 2.4 / 1;
+     /* outline: 1px solid #ccc;*/
+      margin: 0 auto;
+     max-width: 26rem;  
+      margin-top: 50px;
+      height: 250px;
+    /*padding: 10px;*/
+      
+    }
+  
+    .barLateralContainerSkill{
+      display: flex;
+      margin-left: 0
+       
+  }
+  
+  .barLateralSkill{
+      width: 5px;
+      height: 100px;
+      background-color: blueviolet;
+      /*margin-left:300px ;*/
+    
+   }
+  
+    @media screen and (max-width: 500px) {
+  
+      .scenes{
+       width: 250px;
+        margin: 0 auto;
+      }
+  
+  
+  
+  }
+    
+    .scene-1, .scene-2 {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      height: 250px;
+    }
+    
+    .scene-1 {
+  
+      cursor: pointer;
+  
+    }
+    
+    .scene-2 {
+  
+     background-color: rgba(0,0,0,.93);
+      -webkit-mask-image: linear-gradient(
+        to left,
+        transparent 47.5%,
+        #fff 52.5%
+      );
+      -webkit-mask-size: 210%;
+      -webkit-mask-position: right;
+    }
+    
+    .scenes:is(:hover, :focus) .scene-2 {
+      -webkit-mask-position: left;
+      transition: -webkit-mask-position 1.5s linear;
+    }
+    
+    .scene1Text{
+      position: absolute;
+      max-width: 100%;
+      margin: min(40px, 4vw);
+      font-size: 1.25em;
+    }
+    .scene2Text{
+      
+      position: absolute;
+      max-width: 100%;
+      margin: min(40px, 4vw);
+      font-size: 1.25em;
+     
+      margin-left: 25%;
+      margin-bottom: 100px;
+    }
+  
+    @media screen and (max-width: 410px) {
+  
+      .scene2Text{
+        margin-left: 10%;
+      }
+  
+  
+  
+  }
+   
+    .link{
+     text-align: left;
+      margin-left: 0px;
+      margin-top: 10%;
+      font-size: 0.8em;
+      cursor: pointer;
+    }
+    
+    .scene-title-link{
+    margin-bottom: 5%;
+    }
+    
+    .scene-title {
+      position: absolute;
+      max-width: 45%;
+      margin: min(40px, 4vw);
+      font-size: 1.25em;
+    }
+    
+    .scene-1 .scene-title {
+      top: 0;
+      left: 0;
+      color: #000;
+      text-align: left;
+    }
+    
+    .scene-2 .scene-title {
+      top: 0;
+      left: 0;
+      color: #fff;
+      text-align: left;
+    }
+    
+  
+  
+  /*-----*/
+  .itemSkills{
+      display: flex;
+  }
+  
+  .textSkills{
+    width: 170px;
+  }

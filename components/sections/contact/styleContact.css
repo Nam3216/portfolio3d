@@ -1,0 +1,55 @@
+    .contactContainer{
+        /*border-bottom: 1px solid grey;*/
+       /* border-top: 1px solid grey;*/
+        padding: 30px;
+        width: 70vw;
+        margin: 0 auto;
+        height: 43vw;
+    }
+
+    .mediaIcon{
+
+    padding-top: 40px;
+    
+
+    }
+
+    .icon{
+    
+   
+    padding: 10px;
+        margin-top: 10px;
+        color: #a2a36f;
+        cursor: pointer;
+    
+    
+    
+    }
+
+    .icon:hover{
+        color: white;
+    }
+
+    .contactInfo{
+        width: 250px;
+        color: #a2a36f;
+        padding-top: 40px;
+    
+    
+
+    }
+
+    #contactName{
+    cursor: pointer;
+    }
+
+    #contactName:hover{
+        color: white;
+    }
+
+    #contactNm{
+        font-size: 40px;
+        color:whitesmoke;
+    
+    }
+

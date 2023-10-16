@@ -1,0 +1,50 @@
+.canvas{
+    /*position: fixed !important;/*le doy important para q pise diseño q ya viene libreria. si quiero q este al lado de otra cosa no ponerlo*/
+     inset: 0 !important;/*es como darle top right left 0*/
+/* width: 1000px;*/
+margin: 0 auto;
+/* border: 5px solid blue;*/
+ 
+   }
+
+   .windyContainer{
+    display: flex;
+   /* background-color: aqua;*/
+     width:100%;
+     
+     align-items: center;
+     justify-content: center;
+     height: 60vh;
+     /*background-image: url("./herobg.png");*/
+    /* display: flex;
+     background-size: 100% 100%;*/
+     margin: 0 auto;
+    
+  
+ 
+    }
+
+.textGrid{
+margin: 0 auto;
+/*border: 5px solid red;*/
+}
+
+.canvasGrid{
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+
+    .textGrid{
+        
+        width: 100%;
+       
+    }
+
+    .canvasGrid{
+        width: 100%;
+    }
+  
+  
+  
+  }

@@ -1,0 +1,139 @@
+.projectsContainer{
+    width: 70vw; /*80*/   
+    margin: 0 auto;
+    margin-top: 100px;
+    /*border: 5px solid red;*/
+}
+
+.projectItem{
+   /* width: 28vw;*/
+    height: 300px;
+   /* border: 5px solid blue;
+    border: 5px solid yellow;*/
+ 
+}
+
+
+
+.projectItem img{
+    width: 28vw;
+    border: 1px solid black;
+    height: 250px;
+  
+}
+
+
+
+.techContainer img{
+    width: 4vw;
+    margin-right: 10px;
+}
+
+.techContainer{
+    display: flex;
+    
+}
+
+.projectItemText{
+    width: 40vw;
+   /* border: 5px solid blue;*/
+
+
+    
+}
+
+.projectItemText h3{
+    text-align: left;
+    
+}
+
+.projectButton{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.projectButton button{
+    margin-right: 20px;
+}
+
+/*-------------------------2 col-----------------*/
+
+.itemProject{
+   
+    width: fit-content;
+    height: 500px;
+   
+    
+}
+
+.itemProject:hover{
+    border: 1px solid #a2a36f;
+}
+
+.projectItem{
+   
+    width: 28vw;
+    margin: 0 auto;
+    height: fit-content;
+
+}
+
+
+
+.projectItem img{
+    width: 28vw;
+    margin-top: 30px;
+  
+}
+
+
+.projectItemText{
+   
+    width: 28vw;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 0;
+ 
+    padding: 0;
+}
+
+.techContainer img{
+    width: 3vw;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .projectItem img{
+        width: 350px;
+      
+        margin-top: 30px;
+      
+    }
+
+    .projectItem{
+      
+        width: fit-content;
+    }
+
+    .projectItemText{
+    
+        width: fit-content;
+    }
+    
+
+}
+
+@media screen and (max-width: 460px) {
+
+    .projectItem img{
+        width: 250px;
+      
+     
+      
+    }
+
+ 
+    
+
+}
