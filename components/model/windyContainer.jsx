@@ -13,10 +13,10 @@ const WindyContainer=()=>{
     return(
         <div className="windyContainer">
            <Grid container >
-                <Grid item sx={12} md={6} className="textGrid">
+                <Grid item xs={12} md={6} className="textGrid">
                     <Text/>
                 </Grid>
-                <Grid item sx={12} md={6} className="canvasGrid">
+                <Grid item xs={12} md={6} className="canvasGrid">
                     <Canvas className="canvas"
                     shadows
                     frameloop='demand'
@@ -34,7 +34,7 @@ const WindyContainer=()=>{
                         maxPolarAngle={Math.PI / 2}
                         minPolarAngle={Math.PI / 2}/>
                     {/*    <Stage background="city" intensity={0.6}  >*/}
-                            <Planet scale={1.5 }  />{/* MODEL 3D*/}
+                            <Planet scale={1.8 }  />{/* MODEL 3D*/}
                         {/*  </Stage>*/}
                         </Suspense>
                     

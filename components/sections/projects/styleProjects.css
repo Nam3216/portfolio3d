@@ -67,7 +67,7 @@
 }
 
 .itemProject:hover{
-    border: 1px solid #a2a36f;
+    border: 1px solid/* #a2a36f*/blueviolet;
 }
 
 .projectItem{

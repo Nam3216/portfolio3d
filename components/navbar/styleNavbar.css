@@ -1,5 +1,5 @@
 .buttonLink{
-    color: black;
+    color: blueviolet;
     /*font-size: medium;*/
     font-weight: bold;
 }
@@ -17,7 +17,7 @@
 
 .appbarfalse{
     height: 55px;
-    border-bottom: 2px solid #006699 ;
+    border-bottom: 1px solid #a2a36f ;
     
  
 }

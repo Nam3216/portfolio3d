@@ -1,55 +1,110 @@
-    .contactContainer{
-        /*border-bottom: 1px solid grey;*/
-       /* border-top: 1px solid grey;*/
-        padding: 30px;
-        width: 70vw;
-        margin: 0 auto;
-        height: 43vw;
-    }
+.contactContainer{
+    /*border-bottom: 1px solid grey;*/
+   /* border-top: 1px solid grey;*/
+    padding: 30px;
+    width: 70vw;
+    margin: 0 auto;
+    height: 43vw;
+}
 
-    .mediaIcon{
+.mediaIcon{
 
+padding-top: 40px;
+
+
+}
+
+
+
+.contactInfo{
+    width: 250px;
+    color: #a2a36f;
     padding-top: 40px;
-    
 
+
+
+}
+
+#contactName{
+cursor: pointer;
+}
+
+#contactName:hover{
+    color: white;
+}
+
+#contactNm{
+    font-size: 40px;
+    color:whitesmoke;
+
+}
+
+/*----*/
+.contactContainer{
+    width: 70vw;
+    height: fit-content;
+}
+
+form{
+    margin-top: 30px;
+}
+input{
+    display: block;
+    margin: 0 auto;
+    width: 40vw;
+    margin-bottom: 10px;
+    border: 1px solid blueviolet;
+    background-color: rgb(221, 218, 218);
+    font-family:sans-serif;
+    
+}
+
+textarea{
+    height: 150px;
+    width: 40vw;
+    margin: 0 auto;
+    border: 1px solid blueviolet;
+    background-color: rgb(221, 218, 218);
+    font-family:sans-serif;
+}
+
+#formButton{
+    display: block;
+    /*background-color: blueviolet;*/
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+#formButton:hover{
+   opacity: 1;
+}
+
+.contactData p{
+    font-weight: bold;
+    font-family:sans-serif;
     }
 
-    .icon{
-    
-   
-    padding: 10px;
-        margin-top: 10px;
-        color: #a2a36f;
-        cursor: pointer;
-    
-    
-    
-    }
-
-    .icon:hover{
-        color: white;
-    }
-
-    .contactInfo{
-        width: 250px;
-        color: #a2a36f;
-        padding-top: 40px;
-    
-    
-
-    }
-
-    #contactName{
+#mail{
     cursor: pointer;
-    }
+}
 
-    #contactName:hover{
-        color: white;
-    }
+/*---icon-----*/
 
-    #contactNm{
-        font-size: 40px;
-        color:whitesmoke;
-    
-    }
+.icons{
+    min-height: 50px;
+    border-bottom: 1px solid grey;
+   }
 
+
+.icon{
+
+    padding: 10px;
+    margin-top: 10px;
+    color: #a2a36f;
+    cursor: pointer;
+        
+}  
+
+.icon:hover{
+    color: white;
+}

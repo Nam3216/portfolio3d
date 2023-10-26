@@ -6,6 +6,7 @@ import { Grid } from "@mui/material";
 import { useContext } from "react";
 import ContextData from "../../../context/Context";
 import Clipo from "../../clipo/Clipo";
+import Scroll from "./scroll";
 import "./styleHomeComponent.css"
 
 const HomeComponent=()=>{
@@ -22,6 +23,7 @@ const HomeComponent=()=>{
                       
                          <WindyContainer/>
                 <div className="clipoHome">
+                    <Scroll/>
                     <Clipo data={"home"} />
                 </div>    
             </div>

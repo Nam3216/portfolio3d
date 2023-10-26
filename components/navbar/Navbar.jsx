@@ -17,6 +17,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 //import LinkedInIcon from '@mui/icons-material/LinkedIn';
 //import GitHubIcon from '@mui/icons-material/GitHub';
 import "./styleNavbar.css"
+import { useContext } from 'react';
+import ContextData from '../../context/Context';
 
 
 
@@ -25,6 +27,8 @@ function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const[appbarok,setAppbarok]=useState(true)
+
+  const{language,handleLanguage}=useContext(ContextData)
 
 
   const darkTheme = createTheme({
@@ -135,16 +139,16 @@ function ResponsiveAppBar() {
             >
               
                 <MenuItem key={5} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"> <a href="#start"  className='buttonLink'>Presentacion</a></Typography>
+                  <Typography textAlign="center"> <a href="#start" style={{color:"black"}} className='buttonLink'>Presentacion</a></Typography>
                 </MenuItem>
-                <MenuItem key={5} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"> <a href="#skills"   className='buttonLink'>Habilidades</a></Typography>
+                <MenuItem key={6} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center"> <a href="#skills" style={{color:"black"}}  className='buttonLink'>Habilidades</a></Typography>
                 </MenuItem>
-                <MenuItem key={5} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">  <a href="#projects"   className='buttonLink'>Proyectos</a></Typography>
+                <MenuItem key={7} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">  <a href="#projects" style={{color:"black"}}  className='buttonLink'>Proyectos</a></Typography>
                 </MenuItem>
-                <MenuItem key={5} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">  <a href="#contact"   className='buttonLink'>Contacto</a></Typography>
+                <MenuItem key={8} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">  <a href="#contact" style={{color:"black"}}  className='buttonLink'>Contacto</a></Typography>
                 </MenuItem>
               
             </Menu>
@@ -177,28 +181,28 @@ function ResponsiveAppBar() {
                 sx={{ my: 2, color: 'white', display: 'block' }}
               
               >
-                <a href="#start"   className='buttonLink'>Presentacion</a>
+                <a href="#start"  style={{color:"white"}} className='buttonLink'>Presentacion</a>
               </Button>
               <Button
                 key={2}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                <a href="#skills"   className='buttonLink'>Habilidades</a>
+                <a href="#skills"  style={{color:"white"}} className='buttonLink'>Habilidades</a>
               </Button>
               <Button
                 key={3}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                <a href="#projects"   className='buttonLink'>Proyectos</a>
+                <a href="#projects" style={{color:"white"}}  className='buttonLink'>Proyectos</a>
               </Button>
               <Button
                 key={4}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                <a href="#contact"   className='buttonLink'>Contacto</a>
+                <a href="#contact" style={{color:"white"}}  className='buttonLink'>Contacto</a>
               </Button>
           
           </Box>
@@ -206,11 +210,9 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
            
                 <div className='iconsNavbar' >
-                  {/*<LinkedInIcon className='iconsappbar'onClick={()=>window.open("https://www.linkedin.com/in/norberto-manzanos-desarrollador-fullstack/")} />
-                    <GitHubIcon className='iconsappbar' onClick={()=>window.open("https://github.com/Nam3216")}/>*/}  
+               
                     <div className='iconsNavbar' id="flags">
-                      <img onClick={()=>window.open("https://www.linkedin.com/in/norberto-manzanos-desarrollador-fullstack/")} src="linkedin1.png" alt="flag"  />
-                      <img onClick={()=>window.open("https://github.com/Nam3216")} src="github1.png" alt="flag"/>
+                      
                       <img onClick={()=>handleLanguage("spanish")} src="argentina.png" alt="flag"  />
                       <img onClick={()=>handleLanguage("english") } src="united-states.png" alt="flag"/>
                     </div>

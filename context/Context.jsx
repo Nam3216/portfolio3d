@@ -5,6 +5,7 @@ const ContextData=createContext()
 
 const ContextProvider=({children})=>{
     const[dialog,setDialog]=useState("hello")
+    const[language,setLanguage]=useState("spanish")
 
     const handleDialog=(a)=>{
 
@@ -12,7 +13,13 @@ const ContextProvider=({children})=>{
 
     }
 
-    const data={dialog, setDialog, handleDialog}
+    const handleLanguage=(a)=>{
+
+        setLanguage(a)
+       
+    }
+
+    const data={dialog, setDialog, handleDialog, language, handleLanguage}
 
     return(
         <ContextData.Provider value={data}>

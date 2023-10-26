@@ -5,9 +5,13 @@ import Button from '@mui/material/Button';
 import { motion } from "framer-motion";
 import "./styleProjects.css"
 import Clipo from "../../clipo/Clipo";
+import { useContext } from "react";
+import ContextData from "../../../context/Context";
 // fade in video framer https://www.youtube.com/watch?v=ajPPgKTViX8
 const Projects=()=>{
 /*para definir animation */
+    const{handleLanguage,language}=useContext(ContextData)
+
     const fadeInAnimationVariants={
         initial:{
             opacity:0,
@@ -43,17 +47,18 @@ const Projects=()=>{
             <div className="barLateralContainerSkill">
                     <div className="barLateralSkill"></div>
                     <div className="skillsTitle">
-                        <h2>Proyectos.</h2>
+                     {language=="spanish" && <h2>Proyectos.</h2>}   
+                     {language=="english" && <h2>Projects.</h2>}  
                     </div>
                 </div>
             <Grid container className="projectItemContainer">
                 {mockProjects.map((item,index)=>{
                     return(
-                        <Grid item xs={12} md={6} className="itemProject" >
+                        <Grid item xs={12} md={6} className="itemProject" key={index} >
                             
                             <div className="projectItem"
                                
-                            
+                            key={index+10}
                             >
                                 <motion.img src={item.img} alt="img"
                                  variants={fadeInAnimationVariants}
@@ -78,6 +83,7 @@ const Projects=()=>{
                                                     once:true,
                                                 }}*/
                                                 custom={index}
+                                                key={index}
                                                   />
                                             
                                         )
@@ -87,9 +93,13 @@ const Projects=()=>{
                                         <Button variant="contained" onClick={()=>window.open(item.linkSite)} >
                                           Demo
                                         </Button>
-                                        <Button variant="contained" onClick={()=>window.open(item.linkGit)} >
+                                        {language=="spanish" &&<Button variant="contained" onClick={()=>window.open(item.linkGit)} >
                                           Codigo
-                                        </Button>
+                                        </Button> }
+                                        {language=="english" &&<Button variant="contained" onClick={()=>window.open(item.linkGit)} >
+                                          Code
+                                        </Button> }
+                                        
                                     </div>
                             </div>
                             
